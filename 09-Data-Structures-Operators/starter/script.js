@@ -85,7 +85,6 @@ console.log(i, j, k);
 const [p = 1, q = 1, r = 1] = [8];
 console.log(p, q, r);
 
-
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories);
 
@@ -113,4 +112,15 @@ const {
 } = openingHours;
 console.log(mykau, jack);
 
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
 
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+
+// Copy array
+const mainMenyCopy = [...restaurant.mainMenu];
+
+// Join 2 arrays
+const menus = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menus);
